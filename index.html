@@ -3,46 +3,47 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
+  <title>Mera</title>
   <style>
-    /* NOTE: YOU CAN KEEP THE TOP LAYER RELATIVE AND ALL OTHER ABSOLUTE */
-
+    /* Red Part */
     .flag {
+      position: relative;
       height: 600px;
       width: 900px;
       background-color: #CE1126;
-      text-align: center;
+    }
+
+    /* Blue Part */
+    .flag > div {
+      position: absolute;
+      top: 150px;
+      background-color: #002868;
+      /* width: 900px; */
+      width: 100%;
+      height: 300px;
+      color: black;
+    }
+    
+    div > div > div {
       position: relative;
-      font-size: 5rem;
+      left: 350px;
+      top: 50px;
+      height: 200px;
+      width: 200px;
+      background-color: white;
+      border-radius: 50%;
     }
 
     p {
-      margin: 0%;
+      font-size: 5rem;
+      text-align: center;
+      margin: 0;
+      color: white;
     }
 
-    .flag > p {
-      color: aliceblue;
+    .flag>div div p {
+      color: black;
     }
-
-    .flag > div {
-      height: 300px;
-      width: 900px;
-      background-color: #002868;
-      position: absolute;
-      top: 25%;
-    }
-
-    .flag>div>div {
-      width: 200px;
-      height: 200px;
-      margin-left: 350px;
-      border-radius: 50%;
-      background-color: white;
-      position: relative;
-      margin-top: 50px;
-    }
-
-
   </style>
 </head>
 
